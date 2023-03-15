@@ -1,10 +1,10 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="firstmavenwebapp:war exploded">
-    <output-path>$PROJECT_DIR$/target/firstmavenwebapp</output-path>
+  <artifact type="exploded-war" name="workApp:war exploded">
+    <output-path>$PROJECT_DIR$/target/workApp</output-path>
     <properties id="maven-jee-properties">
       <options>
         <exploded>true</exploded>
-        <module>firstmavenwebapp</module>
+        <module>workApp</module>
         <packaging>war</packaging>
       </options>
     </properties>
@@ -20,7 +20,7 @@
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/target/workApp/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="firstmavenwebapp/web/Web" />
+      <element id="javaee-facet-resources" facet="workApp/web/Web" />
     </root>
   </artifact>
 </component>

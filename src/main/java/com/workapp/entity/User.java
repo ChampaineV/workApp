@@ -1,4 +1,4 @@
-package com.paulawaite.entity;
+package com.workapp.entity;
 
 /**
  * A class to represent a user.
