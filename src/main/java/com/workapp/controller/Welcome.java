@@ -22,7 +22,7 @@ import javax.servlet.annotation.WebServlet;
 public class Welcome extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        User user = new User("Leischow", "Vang", "lv002");
+        User user = new User("Leischow", "Vang", 2);
         req.setAttribute("user", user);
         RequestDispatcher dispatcher = req.getRequestDispatcher("/welcome.jsp");
         dispatcher.forward(req, resp);

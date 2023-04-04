@@ -8,7 +8,8 @@ package com.workapp.entity;
 public class User {
     private String firstName;
     private String lastName;
-    private String userid;
+    private int userid;
+    private String email;
 
     /**
      * Instantiates a new User.
@@ -23,7 +24,7 @@ public class User {
      * @param lastName  the last name
      * @param userid    the userid
      */
-    public User(String firstName, String lastName, String userid) {
+    public User(String firstName, String lastName, int userid) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.userid = userid;
@@ -71,7 +72,7 @@ public class User {
      *
      * @return the userid
      */
-    public String getUserid() {
+    public int getUserid() {
         return userid;
     }
 
@@ -80,17 +81,34 @@ public class User {
      *
      * @param userid the userid
      */
-    public void setUserid(String userid) {
+    public void setUserid(int userid) {
         this.userid = userid;
     }
 
+    /**
+     * Gets email.
+     *
+     * @return the user's email address
+     */
+    public String getEmail() {
+        return email;
+    }
+
+    /**
+     * Sets email.
+     * @param email the user's email address
+     */
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
     @Override
     public String toString() {
         return "User{" +
                 "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", userid='" + userid + '\'' +
+                ", userid=" + userid +
+                ", email='" + email + '\'' +
                 '}';
     }
 
