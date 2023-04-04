@@ -1,5 +1,10 @@
 package com.workapp.entity;
 
+/**
+ * A class representing a task.
+ *
+ * @author lvang
+ */
 public class Task {
     private int taskId;
     private String taskName;

@@ -1,5 +1,10 @@
 package com.workapp.entity;
 
+/**
+ * A class representing a task list.
+ *
+ * @author lvang
+ */
 public class TaskList {
     private int taskListId;
     private String taskListName;
@@ -7,6 +12,7 @@ public class TaskList {
     private int folderId;
     private boolean isCompleted;
     private String dateCreated;
+
 
     public int getTaskListId() {
         return taskListId;

@@ -3,7 +3,7 @@ package com.workapp.entity;
 /**
  * A class to represent a user.
  *
- * @author pwaite
+ * @author lvang
  */
 public class User {
     private String firstName;
