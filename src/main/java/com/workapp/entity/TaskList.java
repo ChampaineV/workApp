@@ -13,6 +13,30 @@ public class TaskList {
     private boolean isCompleted;
     private String dateCreated;
 
+    /**
+     * Instantiates a new TaskList
+     */
+    public TaskList() {
+    }
+
+    /**
+     * Instantiates a new TaskList
+     *
+     * @param taskListId task list id
+     * @param taskListName task list name
+     * @param taskListDescription task list description
+     * @param folderId folder id
+     * @param isCompleted task list status
+     * @param dateCreated task list's date created
+     */
+    public TaskList(int taskListId, String taskListName, String taskListDescription, int folderId, boolean isCompleted, String dateCreated) {
+        this.taskListId = taskListId;
+        this.taskListName = taskListName;
+        this.taskListDescription = taskListDescription;
+        this.folderId = folderId;
+        this.isCompleted = isCompleted;
+        this.dateCreated = dateCreated;
+    }
 
     public int getTaskListId() {
         return taskListId;
